@@ -215,6 +215,8 @@ def tsv_dataset_fn(
       eos_id=1)
 
 
+# TODO(sharannarang): Remove the gin config from this function. Use function in
+# model utils instead.
 @gin.configurable()
 def get_vocabulary(mixture_or_task_name):
   """Get the appropriate value for the utils.run.vocabulary argument.
